@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.chkUrgent = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // clsToDo
@@ -64,9 +65,9 @@
             // 
             // btnAddToDo
             // 
-            this.btnAddToDo.Location = new System.Drawing.Point(1074, 46);
+            this.btnAddToDo.Location = new System.Drawing.Point(1074, 33);
             this.btnAddToDo.Name = "btnAddToDo";
-            this.btnAddToDo.Size = new System.Drawing.Size(160, 31);
+            this.btnAddToDo.Size = new System.Drawing.Size(160, 44);
             this.btnAddToDo.TabIndex = 3;
             this.btnAddToDo.Text = "Add";
             this.btnAddToDo.UseVisualStyleBackColor = true;
@@ -109,12 +110,23 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Deleted Items";
             // 
+            // chkUrgent
+            // 
+            this.chkUrgent.AutoSize = true;
+            this.chkUrgent.Location = new System.Drawing.Point(813, 46);
+            this.chkUrgent.Name = "chkUrgent";
+            this.chkUrgent.Size = new System.Drawing.Size(120, 29);
+            this.chkUrgent.TabIndex = 8;
+            this.chkUrgent.Text = "Urgent?";
+            this.chkUrgent.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnAddToDo;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1267, 962);
+            this.Controls.Add(this.chkUrgent);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -140,6 +152,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox chkUrgent;
     }
 }
 
